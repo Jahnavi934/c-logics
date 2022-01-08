@@ -1,13 +1,14 @@
 #include<stdio.h>
 void main()
 {
-	int num1,num2,i;
-	printf("enter two num");
-	scanf("%d%d",&num1,&num2);
-	i=num1;
-	while(i>=num1&&i<num2)
+	int n,r,count=0;
+	scanf("%d",&n);
+	while(n>0)
 	{
-		printf("%d  ",i);
-		i++;
+		r=n%10;
+		printf("%d ",r);
+		count=count+1;
+		n=n/10;
 	}
+	printf("\n%d",count);
 }
